@@ -1,0 +1,26 @@
+{
+  "name": "news-of-culture",
+  "private": true,
+  "description": "Главная страница сайта Новости культуры",
+  "devDependencies": {
+    "autoprefixer": "9.8.4",
+    "browser-sync": "2.26.7",
+    "gulp": "4.0.2",
+    "gulp-plumber": "1.2.1",
+    "gulp-postcss": "8.0.0",
+    "gulp-sass": "4.1.0",
+    "gulp-sourcemaps": "2.6.5"
+  },
+  "scripts": {
+    "build": "gulp styles",
+    "start": "gulp"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11"
+  ],
+  "engines": {
+    "node": "12.18.2"
+  }
+}
