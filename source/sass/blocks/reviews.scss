@@ -1,0 +1,12 @@
+.reviews__title {
+  margin: 0;
+  font-family: $Roboto;
+  @include font(17px, 20px);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.reviews__list {
+  @include list-none;
+}

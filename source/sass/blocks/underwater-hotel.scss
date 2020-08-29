@@ -1,0 +1,25 @@
+.underwater-hotel {
+  background-color: $dark-blue;
+  background-image: url("../img/bg-underwater.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.underwater-hotel__title {
+  margin: 0;
+  font-family: $Roboto;
+  @include font(72px, 84px);
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $white;
+  text-align: center;
+}
+
+.underwater-hotel__description {
+  margin: 0;
+  font-family: $Roboto;
+  @include font(14px, 21px);
+  color: $white;
+  text-align: center;
+}

@@ -1,0 +1,29 @@
+.season-tickets {
+  background-image: radial-gradient(circle, $white 50%, $beige 50%);
+}
+
+.season-tickets__title {
+  margin: 0;
+  font-family: $Roboto;
+  @include font(17px, 20px);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: $black;
+  text-align: center;
+}
+
+.season-tickets__list {
+  @include list-none;
+  text-align: center;
+}
+
+.season-tickets__button {
+  text-decoration: none;
+  font-family: $Roboto;
+  @include font(12px, 14px);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: $white;
+  text-align: center;
+  background-color: $orange;
+}

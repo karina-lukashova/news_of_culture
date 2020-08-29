@@ -1,0 +1,14 @@
+.site-navigation {
+  @include list-none;
+}
+
+.site-navigation a {
+  text-decoration: none;
+  font-family: $Roboto;
+  @include font(15px, 18px);
+  color: $black;
+}
+
+.site-navigation--footer a {
+  color: $white;
+}
