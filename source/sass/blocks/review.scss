@@ -1,3 +1,7 @@
+.review {
+  width: 31.68%;
+}
+
 .review__title {
   font-family: $Playfair;
   @include font(23px, 31px);
@@ -8,10 +12,15 @@
 
 .review__title h3 {
   margin: 0;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  @include font(23px, 31px);
+  font-weight: 900;
 }
 
 .review__text {
   margin: 0;
+  max-width: 370px;
   font-family: $Roboto;
   @include font(14px, 21px);
   color: $black;

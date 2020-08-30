@@ -8,18 +8,24 @@
 
 .underwater-hotel__title {
   margin: 0;
+  margin-bottom: 139px;
+  padding-top: 133px;
   font-family: $Roboto;
   @include font(72px, 84px);
   font-weight: normal;
   text-transform: uppercase;
   color: $white;
   text-align: center;
+  letter-spacing: 2px;
 }
 
 .underwater-hotel__description {
-  margin: 0;
+  margin: 0 auto;
+  padding-bottom: 45px;
+  margin-bottom: 44px;
   font-family: $Roboto;
   @include font(14px, 21px);
   color: $white;
   text-align: center;
+  width: 456px;
 }

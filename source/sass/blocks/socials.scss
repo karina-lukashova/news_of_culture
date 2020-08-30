@@ -1,3 +1,5 @@
 .socials__list {
   @include list-none;
+  display: flex;
+  justify-content: center;
 }

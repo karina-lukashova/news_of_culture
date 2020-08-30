@@ -1,11 +1,27 @@
 .site-navigation {
   @include list-none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 81.5%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.site-navigation__item {
+  margin-right: 52px;
+  margin-bottom: 17px;
+}
+
+.site-navigation__item:last-of-type {
+  margin-right: 0;
 }
 
 .site-navigation a {
   text-decoration: none;
   font-family: $Roboto;
   @include font(15px, 18px);
+  text-transform: uppercase;
+  letter-spacing: 2px;
   color: $black;
 }
 
