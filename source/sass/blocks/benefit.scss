@@ -8,6 +8,9 @@
 
 .benefit__title h3 {
   margin: 0;
+  margin-bottom: 8px;
+  @include font(23px, 31px);
+  font-weight: 900;
 }
 
 .benefit__description {
