@@ -6,6 +6,7 @@
 *.pdf
 *.psd
 *.sublime*
+build/
 source/css/*.css
 source/css/*.map
 node_modules/

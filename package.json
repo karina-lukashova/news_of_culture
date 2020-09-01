@@ -15,7 +15,8 @@
   },
   "scripts": {
     "build": "gulp styles",
-    "start": "gulp"
+    "start": "gulp",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     "last 2 versions",
