@@ -5,6 +5,7 @@ const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
+const ghPages = require("gulp-gh-pages");
 
 // Styles
 
@@ -22,6 +23,12 @@ const styles = () => {
 }
 
 exports.styles = styles;
+
+// GH Pages
+gulp.task('deploy', function() {
+  return gulp.src('./build/**/*')
+    .pipe(ghPages());
+});
 
 // Server
 
