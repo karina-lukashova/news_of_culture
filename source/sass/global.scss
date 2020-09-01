@@ -1,6 +1,12 @@
+html {
+  height: 100%;
+}
+
 body {
   min-height: 100%;
   margin: 0;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
 }
 
 img {

@@ -2,6 +2,7 @@
   @include list-none;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   width: 81.5%;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -23,6 +24,21 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   color: $black;
+}
+
+.site-navigation--footer {
+  position: relative;
+}
+
+.site-navigation--footer::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: $white;
+  opacity: 0.4;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
 }
 
 .site-navigation--footer a {
