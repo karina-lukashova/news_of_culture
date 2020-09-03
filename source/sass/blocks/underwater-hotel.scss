@@ -24,12 +24,16 @@
   margin-bottom: 139px;
   padding-top: 133px;
   font-family: $Roboto;
-  @include font(72px, 84px);
   font-weight: normal;
   text-transform: uppercase;
   color: $white;
   text-align: center;
   letter-spacing: 2px;
+  @include font(64px, 70px);
+
+  @media (min-width: $desktop-width) {
+    @include font(72px, 84px);
+  }
 }
 
 .underwater-hotel__description {

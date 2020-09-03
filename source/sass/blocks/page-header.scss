@@ -2,3 +2,13 @@
   margin-top: 65px;
   margin-bottom: 37px;
 }
+
+.page-header__nav-list {
+  @include list-none;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
+}

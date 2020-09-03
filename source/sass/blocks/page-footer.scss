@@ -14,3 +14,9 @@
 .page-footer__socials {
   margin-top: 70px;
 }
+
+.page-footer__nav-list {
+  @include list-none;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}

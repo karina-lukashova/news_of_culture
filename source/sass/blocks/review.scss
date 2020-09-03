@@ -4,18 +4,29 @@
 
 .review__title {
   font-family: $Playfair;
-  @include font(23px, 31px);
   font-weight: 900;
   text-decoration: none;
   color: $black;
+  @include font(18px, 25px);
+
+  @media (min-width: $desktop-width) {
+    @include font(23px, 31px);
+  }
+  
 }
 
 .review__title h3 {
   margin: 0;
   margin-bottom: 10px;
   margin-top: 15px;
-  @include font(23px, 31px);
+  min-height: 50px;
   font-weight: 900;
+  @include font(18px, 25px);
+
+  @media (min-width: $desktop-width) {
+    @include font(23px, 31px);
+    min-height: 0;
+  }
 }
 
 .review__text {
