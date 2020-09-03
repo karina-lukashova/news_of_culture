@@ -1,16 +1,25 @@
 .site-navigation {
-  @include list-none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 81.5%;
-  margin: 0 auto;
-  margin-bottom: 30px;
+  width: 89.58%;
+  max-width: 1180px;
+
+  @media (min-width: $desktop-width) {
+    width: 81.5%;
+  }
 }
 
 .site-navigation__item {
-  margin-right: 52px;
+  width: 33.33%;
   margin-bottom: 17px;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 52px;
+    width: auto;
+    text-align: left;
+  }
 }
 
 .site-navigation__item:last-of-type {
