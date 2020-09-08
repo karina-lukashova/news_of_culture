@@ -1,9 +1,19 @@
 .logo {
   display: block;
-  text-align: center;
+  width: 216px;
+  
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    width: 345px;
+  }
 }
 
 .logo img {
-  width: 345px;
-  height: 32px;
+  width: 216px;
+  height: 20px;
+  
+  @media (min-width: $tablet-width) {
+    width: 345px;
+    height: 32px;
+  }
 }

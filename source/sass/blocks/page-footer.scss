@@ -12,7 +12,11 @@
 }
 
 .page-footer__socials {
-  margin-top: 70px;
+  margin-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 70px;
+  }
 }
 
 .page-footer__nav-list {

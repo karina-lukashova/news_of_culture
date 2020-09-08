@@ -1,26 +1,42 @@
 .season-tickets {
-  background-image: radial-gradient(circle, $white 353px, $beige 353px);
-  padding-bottom: 36px;
-  margin-bottom: 50px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  background-color: $beige;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 36px;
+    margin-bottom: 50px;
+    background-image: radial-gradient(circle, $white 353px, $beige 353px);
+  }
 }
 
 .season-tickets__title {
   margin: 0;
   margin-bottom: 35px;
-  padding-top: 33px;
+  padding-top: 15px;
   font-family: $Roboto;
-  @include font(17px, 20px);
+  @include font(20px, 20px);
   text-transform: uppercase;
   letter-spacing: 2px;
   color: $black;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 33px;
+    @include font(17px, 20px);
+  }
 }
 
 .season-tickets__list {
   @include list-none;
   margin: 0 auto;
+  width: 89%;
   text-align: center;
-  width: 370px;
+  
+  @media (min-width: $tablet-width) {
+    width: 370px;
+  }
 }
 
 .season-tickets__item {

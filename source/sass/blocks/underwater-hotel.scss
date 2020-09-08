@@ -5,31 +5,44 @@
   background-position: center top;
   background-repeat: no-repeat;
   position: relative;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .underwater-hotel::after {
-  content: "";
-  width: 55px;
-  height: 55px;
-  background-image: url("../img/icon-underwater.svg");
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 46px;
-  left: 50%;
-  transform: translateX(-50%);
+  @media (min-width: $tablet-width) {
+    content: "";
+    width: 55px;
+    height: 55px;
+    background-image: url("../img/icon-underwater.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 46px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .underwater-hotel__title {
   margin: 0;
-  margin-bottom: 139px;
-  padding-top: 133px;
+  padding: 100px 0;
   font-family: $Roboto;
   font-weight: normal;
   text-transform: uppercase;
   color: $white;
   text-align: center;
   letter-spacing: 2px;
-  @include font(64px, 70px);
+  @include font(40px, 40px);
+
+  @media (min-width: $tablet-width) {
+    @include font(64px, 70px);
+    padding-top: 133px;
+    padding-bottom: 0;
+    margin-bottom: 139px;
+  }
 
   @media (min-width: $desktop-width) {
     @include font(72px, 84px);
@@ -37,12 +50,18 @@
 }
 
 .underwater-hotel__description {
-  margin: 0 auto;
-  padding-bottom: 45px;
-  margin-bottom: 44px;
-  font-family: $Roboto;
-  @include font(14px, 21px);
-  color: $white;
-  text-align: center;
-  width: 456px;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 456px;
+    margin: 0 auto;
+    padding-bottom: 45px;
+    margin-bottom: 44px;
+    @include font(14px, 21px);
+    font-family: $Roboto;
+    color: $white;
+    text-align: center;
+  }
 }
+  
