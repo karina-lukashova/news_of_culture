@@ -1,14 +1,116 @@
+.page-header {
+  position: relative;
+}
+
 .page-header__logo {
-  margin-top: 65px;
-  margin-bottom: 37px;
+  margin: 20px 0;
+  margin-bottom: 15px;
+  margin-left: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    margin-top: 45px;
+    margin-bottom: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 65px;
+  }
 }
 
 .page-header__nav-list {
   @include list-none;
   margin: 0 auto;
-  margin-bottom: 20px;
+  position: absolute;
+  width: 100%;
+  top: 59px;
+  left: 0;
+  z-index: 2;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+    position: static;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 30px;
+  }
+}
+
+.page-header__nav-toggle {
+  display: block;
+  width: 59px;
+  height: 59px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  background-color: $white;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__navigation--closed .page-header__nav-toggle::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 36px;
+  height: 2px;
+  background-color: $black;
+  box-shadow: 0 10px 0 0 $black, 0 20px 0 0 $black;
+}
+
+.page-header__navigation--closed .page-header__nav-list {
+  @media (max-width: $tablet-width - 1) {
+    display: none;
+  }
+}
+
+.page-header__navigation--opened .page-header__nav-toggle::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 10%;
+  transform: translateX(-50%);
+  width: 42px;
+  height: 2px;
+  background-color: $black;
+  transform: rotate(45deg);
+}
+
+.page-header__navigation--opened .page-header__nav-toggle::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 10%;
+  transform: translateX(-50%);
+  width: 42px;
+  height: 2px;
+  background-color: $black;
+  transform: rotate(-45deg);
+}
+
+.page-header__navigation--opened .page-header__nav-list {
+  @media (max-width: $tablet-width - 1) {
+    display: block;
+  }
+}
+
+.page-header__navigation--nojs .page-header__nav-toggle {
+  @media (max-width: $tablet-width - 1) {
+    display: none;
+  }
+}
+
+.page-header__navigation--nojs .page-header__nav-list {
+  @media (max-width: $tablet-width - 1) {
+    display: block;
+    position: static;
   }
 }

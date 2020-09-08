@@ -20,16 +20,24 @@
 .benefit__title {
   text-decoration: none;
   font-family: $Playfair;
-  @include font(23px, 31px);
+  @include font(18px, 20px);
   font-weight: 900;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    @include font(23px, 31px);
+  }
 }
 
 .benefit__title h3 {
   margin: 0;
   margin-bottom: 8px;
-  @include font(23px, 31px);
+  @include font(18px, 20px);
   font-weight: 900;
+
+  @media (min-width: $tablet-width) {
+    @include font(23px, 31px);
+  }
 }
 
 .benefit__description {
@@ -37,4 +45,9 @@
   font-family: $Roboto;
   @include font(14px, 21px);
   color: $black;
+  // text-align: left;
+
+  // @media (min-width: $tablet-width) {
+  //   text-align: center;
+  // }
 }
