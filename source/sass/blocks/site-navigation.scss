@@ -84,6 +84,19 @@
   }
 }
 
+.site-navigation a:hover {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $black;
+  }
+} 
+
+.site-navigation a:active {
+  @media (min-width: $tablet-width) {
+    opacity: 0.6;
+    border-color: rgba($black, 0.6);
+  }
+} 
+
 .site-navigation--footer {
   position: relative;
 
@@ -106,3 +119,16 @@
 .site-navigation--footer a {
   color: $white;
 }
+
+.site-navigation--footer a:hover {
+  @media (min-width: $tablet-width) {
+    border-color: $white;
+  }
+} 
+
+.site-navigation--footer a:active {
+  @media (min-width: $tablet-width) {
+    opacity: 0.6;
+    border-color: rgba($white, 0.6);
+  }
+} 

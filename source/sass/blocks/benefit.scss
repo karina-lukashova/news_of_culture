@@ -40,14 +40,13 @@
   }
 }
 
+.benefit__title:hover h3 {
+  opacity: 0.6;
+}
+
 .benefit__description {
   margin: 0;
   font-family: $Roboto;
   @include font(14px, 21px);
   color: $black;
-  // text-align: left;
-
-  // @media (min-width: $tablet-width) {
-  //   text-align: center;
-  // }
 }

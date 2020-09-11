@@ -37,6 +37,10 @@
   }
 }
 
+.review__title:hover h3 {
+  opacity: 0.6;
+}
+
 .review__text {
   margin: 0;
   font-family: $Roboto;
@@ -46,4 +50,8 @@
   @media (min-width: $tablet-width) {
     max-width: 370px;
   }
+}
+
+.review__image:hover img {
+  filter: brightness(0.5);
 }

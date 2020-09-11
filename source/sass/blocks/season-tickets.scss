@@ -60,3 +60,11 @@
   text-align: center;
   background-color: $orange;
 }
+
+.season-tickets__button:hover {
+  background-color: $dark-orange;
+}
+
+.season-tickets__button:active {
+  color: rgba($white, 0.6);
+}
